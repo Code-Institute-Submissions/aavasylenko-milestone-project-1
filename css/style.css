@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700|Open+Sans+Condensed:100,200,300,400,500,600,700');
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/********************************************Navbar*/
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+    margin-top: 5px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.nav li:last-child {
+                float: right; /* last li item */
+                top:10px;
+            }
+
+/*************************************************Headings*/
+
+.section-header {
+    padding: 0;
+    margin: 0;
+}
+
+/*************************************************Top Section*/
+
+.top-section-container {
+    background-attachment: fixed;
+    background-image: url('../assets/bg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+
+.container-name {
+    padding-left: 50px;
+    margin-top: 25%;
+    position: absolute;
+    color: #4A4142;
+}
+
+
+.name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .container-name {
+        padding-left: 30px;
+        margin-top: 55%;
+    }
+
+    .top-section-container {
+        background-image: url('../assets/bg-sm.jpg');
+    }
+    .nav-link {
+        padding: 5px;
+    }
+}
+
+/*************************************************About*/
+
+.about-container {
+    background-image: url('../assets/photo.png');
+    background-repeat: no-repeat;
+    background-color: #FCF9F9;
+    color: #4A4142;
+}
+
+
+
+.about-row {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+
+.about-col {
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+ @media (min-width: 768px) and (max-width: 991px) {
+    .about-col {
+        text-align: center;
+        padding-top: 130px;
+        padding-bottom: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+} 
+
+@media (max-width: 767px) {
+    .about-container {
+        background-image: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about-col {
+        padding: 50px 20px 50px 20px;
+    }
+}
+
+/*************************************************Skills*/
+
+.skills-container {
+    background-color: #E9C9CE;
+    color: #4A4142;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.skills-row {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.bar-bg {
+    background-color: #908688;
+}
+
+.progress-row {
+    padding: 50px 50px 5px 50px;
+    margin: 0;
+}
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 30px;
+}
+
+.skill-name {
+    position: absolute;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 3px 3px 0px 5px;
+    color: #FCF9F9;
+    z-index: 1;
+}
+
+.samples-row {
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+
+/******************************************Cards*/
+
+.cards-row {
+    margin: auto;
+    padding: 50px 14px;
+}
+
+.cards-col {
+    padding: 12px;
+    margin: auto;
+}
+
+.card {
+    margin: auto;
+    border: 0;
+    background-color: #fff;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.card:hover {
+    background-color: #FCF9F9;
+}
+
+.link-icon {
+    font-size: 30px;
+    display: inline;
+    padding: 20px;
+    color: #4A4142;
+}
+
+.card-body {
+    color: #4A4142;
+}
+
+.card-text {
+    padding: 12px 0;
+}
+
+/* Grow - this is taken from Hover.css (customized by me)*/
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.2);
+}
+
+/**********************************************Contact*/
+
+.contact-container {
+    background-image: url('../assets/gray-airplane.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #FCF9F9;
+    color: #4A4142;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-row {
+    text-align: center;
+    padding: 12px 0 12px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.contact-col {
+    padding: 0;
+}
+
+/**********************************************Form*/
+
+.contact-form-row {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-row {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nopadding {
+   padding: 0 !important;
+}
+
+.btn-primary {
+    background-color: #A96C76;
+    border: none;
+    color: #FCF9F9;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #845A60;
+    color: #fff;
+}
+
+/**********************************Footer*/
+
+.footer-container {
+    background-color: #E9C9CE;
+    color: #4A4142;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer-col {
+    text-align: center;
+    font-size: 30px;
+}
