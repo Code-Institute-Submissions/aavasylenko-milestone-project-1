@@ -87,7 +87,7 @@ The "paper-airplane" in the Contact section was taken from https://www.pngfly.co
 
 The picture of myself is owned by me.
 
-###Acknowledgements
+### Acknowledgements
 
 All the code was inspired by previous lessons in Code Institute.
 
