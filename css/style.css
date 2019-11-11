@@ -22,6 +22,14 @@ body {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #4A4142;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
 .navbar .navbar-toggler {
     border: 0;
     margin-top: 5px;
@@ -101,7 +109,7 @@ body {
 
 
 
-.about-row {
+#about-row {
     text-align: center;
     padding-top: 12px;
     font-family: 'Open Sans', sans-serif;
@@ -146,9 +154,10 @@ body {
     color: #4A4142;
     padding-left: 0;
     padding-right: 0;
+    height: 100%;
 }
 
-.skills-row {
+#skills-row {
     text-align: center;
     padding-top: 12px;
     font-family: 'Open Sans', sans-serif;
@@ -162,13 +171,42 @@ body {
 
 .progress-row {
     padding: 50px 50px 5px 50px;
-    margin: 0;
+    margin: auto;
+    width: 60%;
 }
+
+@media (max-width: 767px) {
+    .progress-row {
+        width: 90%;
+        padding: 0;
+        padding: 50px 0px 5px 0px;
+    }
+}
+
 
 .progress {
     position: relative;
     height: 25px;
     margin-bottom: 30px;
+    /* Below is the animation taken from Hover.css */
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.progress:hover,
+.progress:focus,
+.progress:active {
+    transform: scale(1.2);
+}
+
+
+
+#progress-col {
+    padding: 0;
 }
 
 .skill-name {
@@ -181,7 +219,7 @@ body {
     z-index: 1;
 }
 
-.samples-row {
+#samples-row {
     text-align: center;
     padding-top: 12px;
     font-family: 'Open Sans', sans-serif;
@@ -260,7 +298,7 @@ body {
 }
 
 
-.contact-row {
+#contact-row {
     text-align: center;
     padding: 12px 0 12px 0;
     font-family: 'Open Sans', sans-serif;
@@ -284,6 +322,13 @@ body {
     width: 50%;
 }
 
+@media (max-width: 767px) {
+    .form-row {
+        margin: auto;
+        width: 90%;
+    }
+}
+
 .nopadding {
     padding: 0 !important;
 }
@@ -299,6 +344,14 @@ body {
 .btn-primary:active {
     background-color: #845A60;
     color: #fff;
+}
+
+#message-box {
+    margin-bottom: 0;
+}
+
+#muted-p {
+    font-size: 15px;
 }
 
 /**********************************Footer*/

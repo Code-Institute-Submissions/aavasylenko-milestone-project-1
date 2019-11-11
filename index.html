@@ -17,8 +17,8 @@
     <!-----Header------>
     <header class='top-section-container'>
         <div class="container container-fluid">
-        <nav class='navbar navbar-light'>
-            
+            <nav class='navbar navbar-light'>
+
                 <button class='navbar-toggler collapsed mr-auto' type="button" data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
             <span class='navbar-toggler-icon'></span>
         </button>
@@ -30,8 +30,8 @@
                         <li class='nav-item'><a class='nav-link' href='#skills'>Skills</a></li>
                         <li class='nav-item'><a class='nav-link' href='#contact'>Contact</a></li>
                 </div>
-            
-        </nav>
+
+            </nav>
         </div>
         <div class='container container-name'>
             <h1 class='name'>Anastasiia Vasylenko</h1>
@@ -41,10 +41,10 @@
     <!-----/.Header------>
 
     <!-----About------>
-    <section class='about' id='about'>
+    <section id='about'>
         <div class='container-fluid about-container no-gutters'>
             <div class='row-wrap no-gutters'>
-                <div class="row about-row no-gutters">
+                <div class="row no-gutters" id='about-row'>
                     <div class="col section-header">
                         <h2 class='text-uppercase'>About Me</h2>
                     </div>
@@ -53,7 +53,6 @@
                     <div class="col col-12 col-md-7 offset-md-5 about-col">
                         <p class='about-p'> I am a software developer from Austin, TX who loves to write software, build great products and help businesses succeed with their goals. </br>
                             I appreciate good design and I am seeing it's importance more then ever in todays apps, web sites and products.</br>
-                            </br>
                             Having professional experince in digital marketing, I enjoy combining these skills with web development, which results in great products for numerous businesses!</p>
                     </div>
                 </div>
@@ -63,9 +62,9 @@
     <!-----/.About------>
 
     <!-----Skills------->
-    <section class="skills" id='skills'>
+    <section id='skills'>
         <div class='container-fluid skills-container no-gutters'>
-            <div class='row skills-row'>
+            <div class='row' id='skills-row'>
                 <div class='col section-header'>
                     <h2 class='text-uppercase'>My Skills</h2>
                 </div>
@@ -73,30 +72,30 @@
 
             <!-------Below is Bootstrap Progress bar, but customized by me----->
             <div class='row progress-row'>
-                <div class='col'>
+                <div class='col' id='progress-col'>
                     <div class="progress">
                         <span class="skill-name">HTML</span>
-                        <div class="progress-bar bar-bg" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bar-bg" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                         <span class="sr-only">90% complete</span>
                     </div>
                     <div class="progress">
                         <span class="skill-name">CSS</span>
-                        <div class="progress-bar bar-bg" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bar-bg" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
                         <span class="sr-only">80% complete</span>
                     </div>
                     <div class="progress">
                         <span class="skill-name">JavaScript</span>
-                        <div class="progress-bar bar-bg" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bar-bg" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
                         <span class="sr-only">70% complete</span>
                     </div>
                     <div class="progress">
                         <span class="skill-name">Python</span>
-                        <div class="progress-bar bar-bg" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bar-bg" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
                         <span class="sr-only">60% complete</span>
                     </div>
                 </div>
             </div>
-            <div class="row samples-row">
+            <div class="row" id='samples-row'>
                 <div class="col section-header">
                     <h3 class="text-uppercase">Work Samples</h3>
                 </div>
@@ -104,9 +103,12 @@
             <!----- Below is the code taken from Bootstrap (cards), but customized by me ---->
             <div class='row cards-row no gutters'>
                 <div class='col col-12 col-md-4 cards-col'>
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 20rem;">
                         <div class="card-body">
                             <h5 class="card-title">Whiskey Drop</h5>
+                            <a href="https://aavasylenko.github.io/whiskey-drop" class="card-link" target='_blank'>
+                                <img src='assets/whiskey_preview.png' style="width:280px;height:140px;" />
+                                </a>
                             <p class="card-text">A landing page for online business. Built with HTML5 and CSS3.</p>
                             <a href="https://github.com/aavasylenko/whiskey-drop" class="card-link" target='_blank'><i class="fa fa-code link-icon hvr-grow"></i></a>
                             <a href="https://aavasylenko.github.io/whiskey-drop/" class="card-link" target='_blank'><i class="fa fa-tv link-icon hvr-grow"></i></a>
@@ -114,9 +116,12 @@
                     </div>
                 </div>
                 <div class='col col-12 col-md-4 cards-col'>
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 20rem;">
                         <div class="card-body">
-                            <h5 class="card-title">JTG</h5>
+                            <h5 class="card-title">Jenning's Tactical Guns</h5>
+                            <a href="https://aavasylenko.github.io/jtg" class="card-link" target='_blank'>
+                            <img src='assets/jtg_preview.png' style="width:280px;height:140px;" />
+                            </a>
                             <p class="card-text">A website for a business built with HTML5, CSS3 and JavaScript.</p>
                             <a href="https://github.com/aavasylenko/jtg" class="card-link" target='_blank'><i class="fa fa-code link-icon hvr-grow"></i></a>
                             <a href="https://aavasylenko.github.io/jtg/" class="card-link" target='_blank'><i class="fa fa-tv link-icon hvr-grow"></i></a>
@@ -124,9 +129,12 @@
                     </div>
                 </div>
                 <div class='col col-12 col-md-4 cards-col'>
-                    <div class="card" style="width: 14rem;">
+                    <div class="card" style="width: 20rem;">
                         <div class="card-body">
                             <h5 class="card-title">Resume Website</h5>
+                            <a href="https://aavasylenko.github.io/myresume/" class="card-link" target='_blank'>
+                            <img src='assets/resume_preview.png' style="width:280px;height:140px;" />
+                            </a>
                             <p class="card-text">My first resume project built with HTML5, CSS3 and JavaScript.</p>
                             <a href="https://github.com/aavasylenko/myresume" class="card-link" target='_blank'><i class="fa fa-code link-icon hvr-grow"></i></a>
                             <a href="https://aavasylenko.github.io/myresume/" class="card-link" target='_blank'><i class="fa fa-tv link-icon hvr-grow"></i></a>
@@ -140,10 +148,10 @@
     <!-----/.Skills------->
 
     <!-----Contact------->
-    <section class="contact" id='contact'>
+    <section id='contact'>
         <div class="container-fluid contact-container no-gutters">
             <div class='row-wrap'>
-                <div class="row contact-row">
+                <div class="row" id='contact-row'>
                     <div class="col contact-col section-header">
                         <h2 class='text-uppercase'>Contact</h2>
                     </div>
@@ -154,7 +162,7 @@
                     <form>
                         <div class="form-row">
                             <div class="form-group col-12 nopadding">
-                                <label for="name">Name</label>
+                                <label for="name">Name*</label>
                                 <input type="name" class="form-control" id="name" placeholder="Name" required>
                             </div>
                             <div class="form-group col-12 nopadding">
@@ -162,12 +170,15 @@
                                 <input type="tel" class="form-control" id="tel" placeholder="Phone Number">
                             </div>
                             <div class="form-group col-12 nopadding">
-                                <label for="Email">Email</label>
+                                <label for="Email">Email*</label>
                                 <input type="email" class="form-control" id="Email" placeholder="Email" required>
                             </div>
-                            <div class="form-group col-12 nopadding">
-                                <label for="textarea">Message</label>
+                            <div class="form-group col-12 nopadding" id='message-box'>
+                                <label for="textarea">Message*</label>
                                 <textarea class="form-control" id="textarea" rows="5" required></textarea>
+                            </div>
+                            <div class='text-muted'>
+                                <p id='muted-p'>*Required fields</p>
                             </div>
                             <div class="form-group col-12 nopadding">
                                 <button type="submit" class="btn btn-primary">Send</button>
@@ -179,21 +190,21 @@
         </div>
     </section>
     <!-----/.Contact------->
-    
+
     <!---------Footer------->
-    <footer class = 'container-fluid footer-container'>
+    <footer class='container-fluid footer-container'>
         <div class="row no-gutters">
             <div class="col footer-col">
-               <a href='https://www.linkedin.com/in/anastasiia-vasylenko-4634a617b/' target='_blank'><i class="fa fa-linkedin link-icon hvr-grow"></i></a>
-               <span class='sr-only'>LinkedIn</span>
-               <a href='https://github.com/aavasylenko' target='_blank'><i class="fa fa-github-square link-icon hvr-grow"></i></a>
-               <span class='sr-only'>GitHub</span>
-               <a href='assets/cv.pdf' target='_blank'><i class="fa fa-download link-icon hvr-grow"></i></a>
-               <span class='sr-only'>Download my resume</span>
+                <a href='https://www.linkedin.com/in/anastasiia-vasylenko-4634a617b/' target='_blank'><i class="fa fa-linkedin link-icon hvr-grow"></i></a>
+                <span class='sr-only'>LinkedIn</span>
+                <a href='https://github.com/aavasylenko' target='_blank'><i class="fa fa-github-square link-icon hvr-grow"></i></a>
+                <span class='sr-only'>GitHub</span>
+                <a href='assets/cv.pdf' target='_blank'><i class="fa fa-download link-icon hvr-grow"></i></a>
+                <span class='sr-only'>Download my resume</span>
             </div>
         </div>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
