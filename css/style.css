@@ -49,6 +49,13 @@ body {
     margin: 0;
 }
 
+.my-heading { 
+    text-align: center;
+    padding-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
 /*************************************************Top Section*/
 
 .top-section-container {
@@ -108,15 +115,6 @@ body {
 }
 
 
-
-#about-row {
-    text-align: center;
-    padding-top: 12px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-}
-
-
 .about-col {
     text-align: center;
     padding-top: 130px;
@@ -158,10 +156,6 @@ body {
 }
 
 #skills-row {
-    text-align: center;
-    padding-top: 12px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
     margin: 0;
 }
 
@@ -220,9 +214,6 @@ body {
 }
 
 #samples-row {
-    text-align: center;
-    padding-top: 12px;
-    font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
 
@@ -265,6 +256,11 @@ body {
     padding: 12px 0;
 }
 
+.card-image {
+    border: 2px solid #4A4142;
+}
+
+
 /* Grow - this is taken from Hover.css (customized by me)*/
 
 .hvr-grow {
@@ -299,10 +295,7 @@ body {
 
 
 #contact-row {
-    text-align: center;
     padding: 12px 0 12px 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
     margin: 0;
 }
 
